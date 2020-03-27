@@ -1,0 +1,6 @@
+* Knex.js => query builder
+* knex migrations => cria histórico do banco de dados
+
+* Nodemon => atualização de código em tempo real de desenvolvimento
+* parâmetrp "-D" na instalação do node permite instalar como dependencia de desenvolvimento
+* Express.js => Faz mapeamento de rotas em node
