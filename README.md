@@ -2,10 +2,6 @@
     <img alt="BeTheHero" title="#BeTheHero" src="https://github.com/hudsonpotenciano/bethehero/blob/master/frontend/src/assets/logo.svg" width="200px" />
 </h1>
 
-<h4 align="center"> 
-	Semana OmniStack 11.0
-</h4>
-
 ## Technologies
 
 This project was developed with the following technologies:
