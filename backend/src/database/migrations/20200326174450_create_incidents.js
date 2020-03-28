@@ -7,10 +7,10 @@ exports.up = function(knex, promice) {
             table.string('ong_id').notNullable();
             table.foreign('ong_id').references('id').inTable('ongs');
         })
-        .then(result => console.log(result))
         .catch(err => console.log(err))
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTable('incidents');
+    return knex.schema.dropTable('incidents')
+    .catch(err => console.log(err));
 };

@@ -2,5 +2,16 @@
 * knex migrations => cria histórico do banco de dados
 
 * Nodemon => atualização de código em tempo real de desenvolvimento
-* parâmetrp "-D" na instalação do node permite instalar como dependencia de desenvolvimento
+* parâmetro "-D" na instalação do node permite instalar como dependencia de desenvolvimento
 * Express.js => Faz mapeamento de rotas em node
+
+* celebrate => validacoes de parametros
+
+* expo => encapsula os sdks android/ios dentro de um aplicativo e fornece esses recursos para outras aplicações.
+Ou seja, não precisando replicar e adicionar todo codigo nativo em cada app.
+
+* Jest => Testes na aplicação
+
+* cross-env => permite criar variáveis de ambiente, podendo diferenciar configurações para ambientes diferentes.
+
+* superteste => 

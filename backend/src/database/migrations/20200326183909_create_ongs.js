@@ -7,10 +7,10 @@ exports.up = function(knex, promice) {
             table.string('city').notNullable();
             table.string('uf').notNullable();
         })
-        .then(result => console.log(result))
         .catch(err => console.log(err))
 };
 
 exports.down = function(knex) {
-    return knex.schema.dropTable('ongs');
+    return knex.schema.dropTable('ongs')
+    .catch(err => console.log(err))
 };
