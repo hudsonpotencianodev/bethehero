@@ -1,4 +1,5 @@
-[<img width="200px" src="https://github.com/hudsonpotenciano/bethehero/blob/master/web/src/assets/logo.svg">](https://betheheroweb.herokuapp.com/)
+[<h1><img width="200px" src="https://github.com/hudsonpotenciano/bethehero/blob/master/web/src/assets/logo.svg"></h1>](https://betheheroweb.herokuapp.com/)
+
 
 [Open web app](https://betheheroweb.herokuapp.com)
 
