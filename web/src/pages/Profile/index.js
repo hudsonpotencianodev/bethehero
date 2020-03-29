@@ -6,7 +6,6 @@ import { FiTrash2 } from 'react-icons/fi';
 import api from '../../services/api';
 import './styles.css'
 
-
 export default function Profile() {
     const [incidents, setIncidents] = useState([]);
     const ongName = localStorage.getItem('ongName');
