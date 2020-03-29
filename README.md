@@ -1,7 +1,5 @@
-<h1 align="center">
-    <img alt="BeTheHero" title="#BeTheHero" src="https://drive.google.com/uc?export=view&id=1LKgF4oX0C9QWSt1goCQySTvwQTCr3iIj" width="200px"/>
-</h1>
-
+[<img width="200px" src="https://github.com/hudsonpotenciano/bethehero/blob/master/web/src/assets/logo.svg">](https://betheheroweb.herokuapp.com/)
+    
 ## Technologies
 
 This project was developed with the following technologies:
