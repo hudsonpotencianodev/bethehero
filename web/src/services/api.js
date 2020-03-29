@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.API_URL,
+  baseURL: process.env.REACT_APP_LOCALAPI || "https://betheheronodeapi.herokuapp.com/",
 })
 
 export default api;
