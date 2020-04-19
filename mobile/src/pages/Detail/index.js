@@ -99,7 +99,7 @@ export default function Detail() {
     currency: 'BRL'
   }).format(incident.value > 0 ? incident.value : 0)
 
-  const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso "${incident.title}" com o valor de ${formattedValue}`
+  const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso "${incident.title}"`
 
   function navigateBack() {
     navigation.goBack()
@@ -132,7 +132,10 @@ export default function Detail() {
         <Text style={styles.incidentValue}>{incident.name} de {incident.city}/{incident.uf}</Text>
 
         <Text style={styles.incidentProperty}>CASO:</Text>
-        <Text style={styles.incidentValue}>{incident.title}j</Text>
+        <Text style={styles.incidentValue}>{incident.title}</Text>
+
+        <Text style={styles.incidentProperty}>DESCRIÇÃO:</Text>
+        <Text style={styles.incidentValue}>{incident.description}</Text>
 
         <Text style={styles.incidentProperty}>Valor:</Text>
         <Text style={styles.incidentValue}>

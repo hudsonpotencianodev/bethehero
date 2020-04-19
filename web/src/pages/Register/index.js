@@ -30,9 +30,10 @@ export default function Register() {
 
         try {
             const response = await api.post('ongs', data)
-            alert(`${response.data.id}`, function () {});
 
-            history.push('/');
+            localStorage.setItem('ongId', response.data.id);
+            localStorage.setItem('ongName', response.data.name);
+            history.push('/profile');
 
         } catch (err) {
             alert.error('Erro no cadastro, tente novamente.')
@@ -50,8 +51,8 @@ export default function Register() {
 
                     <Link className='back-link' to="/">
                         <FiArrowLeft size={16} color="#E02041" />
-          Voltar para o logon
-        </Link>
+                        Voltar para o logon
+                    </Link>
                 </section>
                 <form onSubmit={handleRegister}>
                     <input

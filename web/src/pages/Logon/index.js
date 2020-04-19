@@ -12,6 +12,7 @@ import heroesImg from '../../assets/heroes.png';
 export default function Logon() {
     const [id, setId] = useState('');
     const history = useHistory();
+    
     async function handleLogin(e) {
         e.preventDefault();
 
