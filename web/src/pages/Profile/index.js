@@ -42,8 +42,6 @@ export default function Profile() {
             <header>
                 <img src={logoImg} alt="Be the Hero" />
                 <span>Olá, <strong>{ongName}</strong></span>
-                <span>Login key: <strong>{ongId}</strong></span>
-
                 <Link className="button" to="incidents/new">Cadastrar novo caso</Link>
                 <button onClick={handleLogout} type="button">
                     <FiPower size={18} color="#E02041" />

@@ -30,11 +30,10 @@ export default function Register() {
 
         try {
             const response = await api.post('ongs', data)
-
+            alert(`Copie seu id: ${response.data.id}`);
             localStorage.setItem('ongId', response.data.id);
             localStorage.setItem('ongName', response.data.name);
             history.push('/profile');
-
         } catch (err) {
             alert(err);
         }
