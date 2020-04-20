@@ -12,17 +12,17 @@ export default function Profile() {
     const ongId = localStorage.getItem('ongId');
     const history = useHistory();
     useEffect(() => {
-        api.get('profile', {headers : { Authorization: ongId}})
+        api.get('profile', { headers: { Authorization: ongId } })
             .then(response => {
                 setIncidents(response.data);
             })
     }, [ongId]);
 
-    async function handleDeleteIncident(id){
+    async function handleDeleteIncident(id) {
         try {
             await api.delete(`incidents/${id}`, {
-                headers : {
-                    Authorization : ongId,
+                headers: {
+                    Authorization: ongId,
                 }
             });
 
@@ -42,6 +42,7 @@ export default function Profile() {
             <header>
                 <img src={logoImg} alt="Be the Hero" />
                 <span>Olá, <strong>{ongName}</strong></span>
+                <span>Login key: <strong>{ongId}</strong></span>
 
                 <Link className="button" to="incidents/new">Cadastrar novo caso</Link>
                 <button onClick={handleLogout} type="button">
@@ -59,7 +60,7 @@ export default function Profile() {
                         <strong>DESCRIÇÃO:</strong>
                         <p>{incident.description}</p>
                         <strong>VALOR:</strong>
-                        <p>{Intl.NumberFormat('pt-BR',{ style: 'currency', currency: 'BRL'}).format(incident.value)}</p>
+                        <p>{Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
 
                         <button onClick={() => handleDeleteIncident(incident.id)} type="button">
                             <FiTrash2 size={20} color="#E02041" />
@@ -67,7 +68,7 @@ export default function Profile() {
                     </li>
                 ))}
 
-                
+
             </ul>
         </div>
     );
